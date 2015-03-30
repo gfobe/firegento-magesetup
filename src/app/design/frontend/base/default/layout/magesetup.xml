@@ -539,6 +539,10 @@
             <action method="addItemRender"><type>bundle</type><block>bundle/checkout_cart_item_renderer</block><template>magesetup/checkout/onepage/review/item.phtml</template></action>
             <action method="addItemRender"><type>downloadable</type><block>downloadable/checkout_cart_item_renderer</block><template>magesetup/checkout/onepage/review/item.phtml</template></action>
         </reference>
+        <reference name="paypal.express.review">
+            <block type="magesetup/checkout_agreements" name="magesetup.checkout.agreements" as="agreements"
+                   template="magesetup/checkout/onepage/agreements.phtml"/>
+        </reference>		
     </paypal_express_review>
 
     <paypal_express_review_details>
